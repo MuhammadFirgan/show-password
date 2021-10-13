@@ -1,0 +1,54 @@
+:root {
+  --color: #007bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Sans-Serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color);
+}
+
+.content {
+  /*position: relative;*/
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+}
+
+.content .pwd {
+  position: relative;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid var(--color);
+  color: var(--color);
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.content span {
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  transform: translate(-50%);
+  color: var(--color);
+  
+}
+
+.content span i {
+  font-size: 20px;
+}
+
+i.hide::before {
+  content: '\f070';
+}
